@@ -2,7 +2,7 @@
 
 let paraf = ''
 
-if (process.argv.length > 1){
+if (process.argv.length > 2){
 
     for (let i = 2; i < process.argv.length ; i++){
         paraf += ` ${process.argv[i]}`
