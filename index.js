@@ -1,20 +1,31 @@
 
+//prova senza metodi 
 
-let paraf = ''
+// let paraf = ''
 
-if (process.argv.length > 2){
+// if (process.argv.length > 2){
 
-    for (let i = 2; i < process.argv.length ; i++){
-        paraf += ` ${process.argv[i]}`
+//     for (let i = 2; i < process.argv.length ; i++){
+//         paraf += ` ${process.argv[i]}`
         
-    }
+//     }
     
 
-console.log(paraf)
+// console.log(paraf)
 
-}else{
+// }else{
+//     console.log('Hello Boolean')
+// }
+
+// prova con metodi 
+
+const words =process.argv.slice(2)
+
+if(!words.length){
+    
     console.log('Hello Boolean')
+}else{
+
+    console.log(words.join(' '))
+
 }
-
-
-
